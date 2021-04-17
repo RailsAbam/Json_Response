@@ -11,7 +11,7 @@ app.get("/", async (req, res) =>{
 
     const responseJson = await response.json();
         
-    return res.send(json());
+    return res.send(responseJson);
 
 
 }); 
@@ -28,7 +28,6 @@ fs.mkdir('results', function (){
     });
 
 })
-
 
 const PORT = process.env.PORT || 9000;
 app.listen(PORT, () =>
